@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;700&family=Manrope:wght@800&family=Public+Sans:wght@100;700&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    align-items:center ;
+    justify-content: center;  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    width: 345px;
+    background-color: var( --card);
+    border-radius: 10px;
+    position: relative;
+}
+
+.superior{
+    margin-top: 30px;
+}
+
+
+.texto{
+   text-align: center;
+   padding: 20px;
+   margin: 20px 20px 10px 20px;
+}
+
+
+.desktop{
+  
+    transform: scale(0.7);
+}
+
+
+.icon{
+   padding: 10px;
+   border-radius: 50%;
+   background-color: var(--detalhe) ; 
+   margin-top: 23px;
+   border: none;
+   position: fixed;
+   bottom: 230px;
+}
+
+
+
+.verde{
+   font-size: 15px;
+    color: var( --detalhe);
+    letter-spacing: 5px;
+}
+
+.container .icon:hover{
+  cursor: pointer;
+  box-shadow: 0 5px 15px var(--detalhe);
+}
+
+@media(max-width: 768px){
+    .card{
+        height: 310px;
+        width: 385px;
+    }
+    .card p{
+        font-size: 21px;
+    }
+} 
